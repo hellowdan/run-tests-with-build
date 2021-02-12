@@ -28,6 +28,7 @@
     <scm.plugin.version>1.11.1</scm.plugin.version>
     <invoker.plugin.version>3.1.0</invoker.plugin.version>
     <unpack.build.version>1.0-SNAPSHOT</unpack.build.version>
+    <maven-download.build.version>1.4.1</maven-download.build.version>
 
     <download.build.version>7.26.0.Final</download.build.version>
     <!--TODO - settings.xml-->
@@ -55,6 +56,11 @@
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>com.googlecode.maven-download-plugin</groupId>
+          <artifactId>download-maven-plugin</artifactId>
+          <version>${maven-download.build.version}</version>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-plugin</artifactId>
